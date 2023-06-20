@@ -19,7 +19,6 @@ export default function CreditCard() {
         <Text style={styles.headerText}>Credit / Debit card</Text>
       </View>
       <View style={styles.btnTop}>
-        {/* <Text style={{color:'red',fontSize:20}}>ssssssssssss</Text> */}
         <TouchableOpacity>
           <View style={styles.pinkBtn}>
             <Text
@@ -29,7 +28,7 @@ export default function CreditCard() {
                    colors.white},
                 styles.font,
               ]}>
-              Use the card
+              Use this card
             </Text>
           </View>
         </TouchableOpacity>
