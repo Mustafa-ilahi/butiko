@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
     paddingBottom: sizes.screenHeight * 0.007,
     fontWeight: 'bold',
   },
-  cardHeadDark:{
+  cardHeadDark: {
     color: colors.white,
     fontSize: fontSize.h6,
     paddingBottom: sizes.screenHeight * 0.007,
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
     fontSize: fontSize.large,
     paddingBottom: sizes.screenHeight * 0.007,
   },
-  cardTextDark:{
+  cardTextDark: {
     color: colors.disabledBg2,
     fontSize: fontSize.large,
     paddingBottom: sizes.screenHeight * 0.007,
@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
     paddingBottom: sizes.screenHeight * 0.007,
     fontWeight: 'bold',
   },
-  priceTextDark:{
+  priceTextDark: {
     color: '#A14895',
     fontSize: fontSize.large,
     paddingBottom: sizes.screenHeight * 0.007,
@@ -108,7 +108,7 @@ export const styles = StyleSheet.create({
     // right: sizes.screenWidth * 0.01,
     fontWeight: 'bold',
   },
-  quantityDark:{
+  quantityDark: {
     color: colors.white,
     fontSize: fontSize.h5,
     // right: sizes.screenWidth * 0.01,
@@ -150,10 +150,99 @@ export const styles = StyleSheet.create({
   btnTop: {
     top: sizes.screenHeight * 0.01,
   },
-  priceView:{
-    left:sizes.screenWidth*0.12,
-    backgroundColor:'#923232',
-    padding:sizes.screenWidth*0.009,
-    borderRadius:sizes.screenWidth*0.01
-  }
+  priceView: {
+    left: sizes.screenWidth * 0.12,
+    backgroundColor: '#923232',
+    padding: sizes.screenWidth * 0.009,
+    borderRadius: sizes.screenWidth * 0.01,
+  },
+  crossModal: {
+    justifyContent: 'center',
+    left: sizes.screenWidth * 0.55,
+  },
+  checkoutText: {
+    fontWeight: 'bold',
+    fontSize: fontSize.h5,
+  },
+  modalView: {
+    height: sizes.screenHeight * 0.9,
+    width: sizes.screenWidth,
+    right: sizes.screenWidth * 0.05,
+    top: sizes.screenHeight * 0.3,
+    borderTopRightRadius: sizes.screenWidth * 0.1,
+    borderTopLeftRadius: sizes.screenWidth * 0.1,
+  },
+  padding2: {padding: sizes.screenHeight * 0.04},
+  modalRow: {flexDirection: 'row', alignItems: 'center'},
+  lineTop: {
+    top: sizes.screenHeight * 0.03,
+    right: sizes.screenWidth * 0.4,
+  },
+  innerLine: {
+    width: sizes.screenWidth * 0.9,
+    alignSelf: 'center',
+  },
+  top: {
+    top: sizes.screenHeight * 0.05,
+  },
+  paymentTop: {
+    top: sizes.screenHeight * 0.03,
+  },
+  buttonTop: {
+    top: sizes.screenHeight * 0.08,
+  },
+  buttonTop2: {
+    top: sizes.screenHeight * 0.14,
+  },
+
+  buttonTop3: {
+    top: sizes.screenHeight * 0.19,
+  },
+  btnText: {
+    fontWeight: 'bold',
+    fontSize: fontSize.h6,
+  },
+  rightArrow: {
+    height: sizes.screenHeight * 0.025,
+    width: sizes.screenWidth * 0.03,
+    left: sizes.screenWidth * 0.03,
+  },
+  rightArrow2: {
+    height: sizes.screenHeight * 0.025,
+    width: sizes.screenWidth * 0.03,
+    left: sizes.screenWidth * 0.266,
+  },
+  payment: {
+    height: sizes.screenHeight * 0.025,
+    width: sizes.screenWidth * 0.07,
+    left: sizes.screenWidth * 0.23,
+  },
+  buttonLeft: {
+    left: sizes.screenWidth * 0.35,
+  },
+  buttonLeft2: {
+    left: sizes.screenWidth * 0.27,
+  },
+  buttonLeft3: {
+    left: sizes.screenWidth * 0.45,
+  },
+  methodText: { fontSize: fontSize.h6, fontWeight: 'bold'},
+  discountText: {
+    color: colors.price,
+    fontSize: fontSize.h6,
+    fontWeight: 'bold',
+  },
+  content: {
+    color: colors.gray,
+    textAlign: 'center',
+    top: sizes.screenHeight * 0.02,
+  },
+  contentTop: {
+    top: sizes.screenHeight * 0.16,
+    width: sizes.screenWidth * 0.8,
+    left: sizes.screenWidth * 0.1,
+  },
+  modalButton: {
+    top: sizes.screenHeight * 0.16,
+  },
 });

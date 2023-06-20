@@ -15,6 +15,7 @@
     "react-native-credit-card-input": "^0.4.1",
     "react-native-credit-card-input-fullpage": "^0.2.0",
     "react-native-dimension": "^1.0.6",
+    "react-native-modal": "^13.0.1",
     "react-native-splash-screen": "^3.3.0"
   },
   "devDependencies": {

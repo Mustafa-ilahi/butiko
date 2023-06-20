@@ -9,8 +9,8 @@ import Cart from './src/screens/Cart';
 import CreditCard from './src/screens/CreditCard';
 
 export default function App() {
-  // const [dark, setDark] = useState(true);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
+  // const [dark, setDark] = useState(false);
 
   useEffect(() => {
     SplashScreen.hide();
@@ -26,8 +26,8 @@ export default function App() {
         {/* <Onboarding /> */}
         {/* <Success /> */}
         {/* <Failed /> */}
-        {/* <Cart /> */}
-        <CreditCard />
+        <Cart />
+        {/* <CreditCard /> */}
       </View>
     </SafeAreaView>
   );

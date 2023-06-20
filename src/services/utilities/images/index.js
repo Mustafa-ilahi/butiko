@@ -29,6 +29,11 @@ import minus from '../../../assets/minus.png';
 import plus from '../../../assets/plus.png';
 import plusLight from '../../../assets/plusLight.png';
 import checkout from '../../../assets/checkout.png';
+import line from '../../../assets/line.png';
+import darkLine from '../../../assets/darkLine.png';
+import rightArrow from '../../../assets/rightArrow.png';
+import rightArrowDark from '../../../assets/rightArrowDark.png';
+import payment from '../../../assets/payment.png';
 
 const images = {
   OnboardingBg,
@@ -62,5 +67,10 @@ const images = {
   plus,
   plusLight,
   checkout,
+  line,
+  darkLine,
+  rightArrow,
+  rightArrowDark,
+  payment,
 };
 export default images;
