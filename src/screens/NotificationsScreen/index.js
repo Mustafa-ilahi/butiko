@@ -14,6 +14,7 @@ import {colors, fontSize} from '../../services';
 import Swipelist from 'react-native-swipeable-list-view';
 
 export default function NotifcationsScreen() {
+//   const [dark, setDark] = useState(true);
   const [dark, setDark] = useState(false);
   const data = [
     {
