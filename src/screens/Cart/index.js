@@ -148,7 +148,7 @@ export default function Cart() {
           </View>
         </TouchableOpacity>
       </View>
-      {/* <Modal
+      <Modal
         isVisible={isModalVisible}
         onSwipeComplete={() => setModalVisible(false)}
         onBackdropPress={() => setModalVisible(false)}>
@@ -319,10 +319,10 @@ export default function Cart() {
             </TouchableOpacity>
           </View>
         </View>
-      </Modal> */}
+      </Modal>
 
       {/* ******************************** Filter modal ******************************** */}
-      <Modal
+      {/* <Modal
         isVisible={isModalVisible}
         onSwipeComplete={() => setModalVisible(false)}
         onBackdropPress={() => setModalVisible(false)}>
@@ -490,7 +490,7 @@ export default function Cart() {
             </TouchableOpacity>
           </View>
         </View>
-      </Modal>
+      </Modal> */}
     </SafeAreaView>
   );
 }
