@@ -7,10 +7,11 @@ import Success from './src/screens/Success';
 import Failed from './src/screens/Failed';
 import Cart from './src/screens/Cart';
 import CreditCard from './src/screens/CreditCard';
+import NotifcationsScreen from './src/screens/NotificationsScreen';
 
 export default function App() {
   const [dark, setDark] = useState(false);
-  // const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(true);
 
   useEffect(() => {
     SplashScreen.hide();
@@ -26,8 +27,9 @@ export default function App() {
         {/* <Onboarding /> */}
         {/* <Success /> */}
         {/* <Failed /> */}
-        <Cart />
+        {/* <Cart /> */}
         {/* <CreditCard /> */}
+        <NotifcationsScreen />
       </View>
     </SafeAreaView>
   );
