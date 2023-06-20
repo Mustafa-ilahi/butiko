@@ -321,7 +321,7 @@ export default function Cart() {
         </View>
       </Modal> */}
 
-      {/* Filter modal */}
+      {/* ******************************** Filter modal ******************************** */}
       <Modal
         isVisible={isModalVisible}
         onSwipeComplete={() => setModalVisible(false)}
