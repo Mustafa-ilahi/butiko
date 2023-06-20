@@ -16,16 +16,25 @@ export default function CreditCard() {
     <SafeAreaView>
       <View style={styles.headerView}>
         <Header darkStatus={dark} />
-        <Text style={styles.headerText}>Credit / Debit card</Text>
+
+        <Text
+          style={[
+            {color: !dark ? colors.black : colors.white},
+            styles.headerText,
+          ]}>
+          Credit / Debit card
+        </Text>
       </View>
       <View style={styles.btnTop}>
         <TouchableOpacity>
           <View style={styles.pinkBtn}>
             <Text
               style={[
-                {color:
-                  //  dark ? colors.black : 
-                   colors.white},
+                {
+                  color:
+                    //  dark ? colors.black :
+                    colors.white,
+                },
                 styles.font,
               ]}>
               Use this card
@@ -34,11 +43,9 @@ export default function CreditCard() {
         </TouchableOpacity>
       </View>
       <View>
-        <CreditCardInput onChange={this._onChange} requiresName/>
+        <CreditCardInput onChange={this._onChange} requiresName darkStatus={dark}/>
         {/* <Text style={{color:'red'}}>ssssssssss</Text> */}
-      
       </View>
-     
     </SafeAreaView>
   );
 }
