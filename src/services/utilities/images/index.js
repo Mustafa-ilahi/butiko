@@ -34,6 +34,7 @@ import darkLine from '../../../assets/darkLine.png';
 import rightArrow from '../../../assets/rightArrow.png';
 import rightArrowDark from '../../../assets/rightArrowDark.png';
 import payment from '../../../assets/payment.png';
+import colorDark from '../../../assets/colorDark.png';
 
 const images = {
   OnboardingBg,
@@ -72,5 +73,6 @@ const images = {
   rightArrow,
   rightArrowDark,
   payment,
+  colorDark
 };
 export default images;

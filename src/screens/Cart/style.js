@@ -137,6 +137,16 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
+  filterBtn: {
+    backgroundColor: colors.pink,
+    padding: sizes.screenWidth * 0.05,
+    alignItems: 'center',
+    alignSelf: 'center',
+    width: sizes.screenWidth * 0.9,
+    borderRadius: sizes.screenWidth * 0.3,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
   cartIcon: {
     height: sizes.screenHeight * 0.03,
     width: sizes.screenWidth * 0.06,
@@ -182,6 +192,7 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.9,
     alignSelf: 'center',
   },
+
   top: {
     top: sizes.screenHeight * 0.05,
   },
@@ -207,6 +218,16 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.03,
     left: sizes.screenWidth * 0.03,
   },
+  colorArrow: {
+    height: sizes.screenHeight * 0.025,
+    width: sizes.screenWidth * 0.03,
+    left: sizes.screenWidth * 0.13,
+  },
+  colorImg: {
+    height: sizes.screenHeight * 0.04,
+    width: sizes.screenWidth * 0.18,
+    left: sizes.screenWidth * 0.12,
+  },
   rightArrow2: {
     height: sizes.screenHeight * 0.025,
     width: sizes.screenWidth * 0.03,
@@ -220,13 +241,19 @@ export const styles = StyleSheet.create({
   buttonLeft: {
     left: sizes.screenWidth * 0.35,
   },
+  mediumBtn: {
+    left: sizes.screenWidth * 0.42,
+  },
   buttonLeft2: {
     left: sizes.screenWidth * 0.27,
   },
   buttonLeft3: {
     left: sizes.screenWidth * 0.45,
   },
-  methodText: { fontSize: fontSize.h6, fontWeight: 'bold'},
+  priceRangeView: {
+    left: sizes.screenWidth * 0.35,
+  },
+  methodText: {fontSize: fontSize.h6, fontWeight: 'bold'},
   discountText: {
     color: colors.price,
     fontSize: fontSize.h6,
@@ -245,4 +272,23 @@ export const styles = StyleSheet.create({
   modalButton: {
     top: sizes.screenHeight * 0.16,
   },
+  filterBtnView: {
+    top: sizes.screenHeight * 0.27,
+  },
+  crossModal2: {
+    justifyContent: 'center',
+    left: sizes.screenWidth * 0.65,
+  },
+  colorTop: {
+    top: sizes.screenHeight * 0.18,
+  },
+  priceViewTop: {
+    top: sizes.screenHeight * 0.2,
+  },
+  colorLineTop: {
+    top: sizes.screenHeight * 0.1,
+  },
+  sizeLineTop:{
+    top: sizes.screenHeight * 0.09,
+  }
 });

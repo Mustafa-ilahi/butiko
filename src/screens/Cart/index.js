@@ -13,7 +13,7 @@ import {colors, sizes} from '../../services';
 import Modal from 'react-native-modal';
 
 export default function Cart() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -148,7 +148,7 @@ export default function Cart() {
           </View>
         </TouchableOpacity>
       </View>
-      <Modal
+      {/* <Modal
         isVisible={isModalVisible}
         onSwipeComplete={() => setModalVisible(false)}
         onBackdropPress={() => setModalVisible(false)}>
@@ -314,6 +314,177 @@ export default function Cart() {
                     styles.font,
                   ]}>
                   Place Order
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal> */}
+
+      {/* Filter modal */}
+      <Modal
+        isVisible={isModalVisible}
+        onSwipeComplete={() => setModalVisible(false)}
+        onBackdropPress={() => setModalVisible(false)}>
+        <View
+          style={[
+            {backgroundColor: !dark ? colors.white : colors.black},
+            styles.modalView,
+          ]}>
+          <View style={styles.padding2}>
+            <View style={styles.modalRow}>
+              <Text
+                style={[
+                  {color: !dark ? colors.black : colors.white},
+                  styles.checkoutText,
+                ]}>
+                Filters
+              </Text>
+              <View style={styles.crossModal2}>
+                <TouchableOpacity onPress={() => setModalVisible(false)}>
+                  <View>
+                    <Image source={images.cross} style={styles.cross} />
+                  </View>
+                </TouchableOpacity>
+              </View>
+            </View>
+            <View>
+              <Image
+                source={!dark ? images.line : images.darkLine}
+                style={styles.lineTop}
+              />
+            </View>
+            <View style={[styles.top]}>
+              
+              <TouchableOpacity style={styles.modalRow}>
+                <Text
+                  style={[
+                    {color: !dark ? colors.black : colors.white},
+                    styles.btnText,
+                  ]}>
+                  Category{' '}
+                </Text>
+                <View style={[styles.modalRow, styles.buttonLeft]}>
+                  <Text
+                    style={[
+                      {color: !dark ? colors.price : colors.purple},
+                      styles.methodText,
+                    ]}>
+                    Jacket, Coat
+                  </Text>
+                  <Image
+                    source={!dark ? images.rightArrow : images.rightArrowDark}
+                    style={styles.rightArrow}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.sizeLineTop}>
+                <Image
+                  source={!dark ? images.line : images.darkLine}
+                  style={styles.innerLine}
+                />
+              </View>
+            <View style={styles.buttonTop}>
+              
+              <View style={styles.colorLineTop}>
+                <Image
+                  source={!dark ? images.line : images.darkLine}
+                  style={styles.innerLine}
+                />
+              </View>
+              <View style={[styles.paymentTop]}>
+                <TouchableOpacity style={styles.modalRow}>
+                  <Text
+                    style={[
+                      {color: !dark ? colors.black : colors.white},
+                      styles.btnText,
+                    ]}>
+                    Size
+                  </Text>
+                  <View style={[styles.modalRow, styles.mediumBtn]}>
+                    <Text
+                      style={[
+                        {color: !dark ? colors.price : colors.purple},
+                        styles.methodText,
+                      ]}>
+                      Small, Medium
+                    </Text>
+                    <Image
+                      source={!dark ? images.rightArrow : images.rightArrowDark}
+                      style={styles.rightArrow}
+                    />
+                  </View>
+                </TouchableOpacity>
+              </View>
+            </View>
+
+            <View style={[styles.colorTop]}>
+              <Image
+                source={!dark ? images.line : images.darkLine}
+                style={styles.colorLineTop}
+              />
+              <TouchableOpacity style={styles.modalRow}>
+                <Text
+                  style={[
+                    {color: !dark ? colors.black : colors.white},
+                    styles.btnText,
+                  ]}>
+                  Color
+                </Text>
+                <View style={[styles.modalRow, styles.mediumBtn]}>
+                  <Image
+                    source={images.colorDark}
+                    style={styles.colorImg}
+                  />
+                  <Image
+                    source={!dark ? images.rightArrow : images.rightArrowDark}
+                    style={styles.colorArrow}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.priceViewTop}>
+              <Image
+                source={!dark ? images.line : images.darkLine}
+                style={styles.innerLine}
+              />
+              <View style={[styles.paymentTop]}>
+                <TouchableOpacity style={styles.modalRow}>
+                  <Text
+                    style={[
+                      {color: !dark ? colors.black : colors.white},
+                      styles.btnText,
+                    ]}>
+                    Price range
+                  </Text>
+                  <View style={[styles.modalRow, styles.priceRangeView]}>
+                    <Text
+                      style={[
+                        {color: !dark ? colors.price : colors.purple},
+                        styles.methodText,
+                      ]}>
+                      $80 - $150
+                    </Text>
+                    <Image
+                      source={!dark ? images.rightArrow : images.rightArrowDark}
+                      style={styles.rightArrow}
+                    />
+                  </View>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.filterBtnView}>
+            <TouchableOpacity onPress={handleCheckout}>
+              <View style={styles.filterBtn}>
+                <Text
+                  style={[
+                    {color: !dark ? colors.white : colors.black},
+                    styles.font,
+                  ]}>
+                  Apply Filters
                 </Text>
               </View>
             </TouchableOpacity>
