@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {styles} from './style';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import {colors, sizes} from '../../services';
 import Header from '../../components/Header';
 import {
@@ -18,10 +18,28 @@ export default function CreditCard() {
         <Header darkStatus={dark} />
         <Text style={styles.headerText}>Credit / Debit card</Text>
       </View>
+      <View style={styles.btnTop}>
+        {/* <Text style={{color:'red',fontSize:20}}>ssssssssssss</Text> */}
+        <TouchableOpacity>
+          <View style={styles.pinkBtn}>
+            <Text
+              style={[
+                {color:
+                  //  dark ? colors.black : 
+                   colors.white},
+                styles.font,
+              ]}>
+              Use the card
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
       <View>
         <CreditCardInput onChange={this._onChange} requiresName/>
         {/* <Text style={{color:'red'}}>ssssssssss</Text> */}
+      
       </View>
+     
     </SafeAreaView>
   );
 }
